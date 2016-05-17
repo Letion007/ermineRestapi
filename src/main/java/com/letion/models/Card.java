@@ -38,7 +38,6 @@ public class Card {
         this.cardDescription = cardDescription;
     }
 
-    //getter setter
 
 }
 

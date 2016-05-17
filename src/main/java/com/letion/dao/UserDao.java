@@ -22,19 +22,17 @@ public class UserDao implements BaseDao<User> {
 
 	@Override
 	public User findById(int id) {
-		Query q = session.createQuery("FROM User where id=:id");
-		q.setParameter("id",id);
-		List<User> city =  q.list();
+		Query query = session.createQuery("FROM User where id=:id");
+		query.setParameter("id", id);
+		List<User> city =  query.list();
 		return city.get(0);
 	}
 
 	@Override
 	public User findByLogin(String login) {
-		System.out.println("login(Dao) = " + login);
-
-		Query q = session.createQuery("FROM User u where u.userName=:login");
-		q.setParameter("login",login);
-		List<User> user =  q.list();
+		Query query = session.createQuery("FROM User u where u.userName=:login");
+		query.setParameter("login", login);
+		List<User> user =  query.list();
 		return user.get(0);
 	}
 

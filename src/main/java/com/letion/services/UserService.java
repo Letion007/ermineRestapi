@@ -16,8 +16,6 @@ public class UserService {
     private UserDao userDao;
 
     public UserDTO getByLogin(String login) {
-        System.out.println("login(Dao) = " + login);
-
         User user = userDao.findByLogin(login);
         UserDTO userDTO = new UserDTO();
         userDTO.setUserId(user.getUserId());
@@ -30,6 +28,5 @@ public class UserService {
         userDTO.setEmail(user.getEmail());
         return userDTO;
     }
-
 
 }

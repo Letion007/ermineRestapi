@@ -51,4 +51,5 @@ public class Event {
     public void setCard(Card card) {
         this.card = card;
     }
+
 }

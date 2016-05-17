@@ -8,14 +8,13 @@
         <property name="hibernate.dialect"> org.hibernate.dialect.MySQLDialect </property>
         <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/erminerest</property>
-        <property name="hibernate.connection.username">neonet</property>
-        <property name="hibernate.connection.password">matrix</property>
+        <property name="hibernate.connection.username">user</property>
+        <property name="hibernate.connection.password">1111</property>
         <property name="hibernate.show_sql">true</property>
         <property name="hibernate.current_session_context_class">thread</property>
         <!-- DB schema will be updated if needed -->
         <property name="hibernate.hbm2ddl.auto">validate</property>
 
-        <!--<mapping class="com.letion.models.Hotel"/>-->
         <mapping class="com.letion.models.User"/>
         <mapping class="com.letion.models.Card"/>
         <mapping class="com.letion.models.Event"/>
