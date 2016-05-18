@@ -9,9 +9,9 @@ public class Card {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int cardId;
-    @Column(name = "cardName")
+    @Column(name = "card_name")
     private String cardName;
-    @Column(name = "cardDescription")
+    @Column(name = "card_description")
     private String cardDescription;
 
     public int getCardId() {

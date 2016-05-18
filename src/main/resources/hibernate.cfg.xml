@@ -18,6 +18,7 @@
         <mapping class="com.letion.models.User"/>
         <mapping class="com.letion.models.Card"/>
         <mapping class="com.letion.models.Event"/>
+        <mapping class="com.letion.models.Logins"/>
     </session-factory>
 
 </hibernate-configuration>

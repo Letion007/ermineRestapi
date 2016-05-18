@@ -10,7 +10,7 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int userId;
-    @Column(name = "isEnabled")
+    @Column(name = "is_enabled")
     private boolean isEnabled;
     @Column(name = "username")
     private String userName;
@@ -25,7 +25,7 @@ public class User {
     private Date registered;
     @Column(name = "roles")
     private String roles;
-    @Column(name = "deviceId")
+    @Column(name = "device_id")
     private String deviceId;
     @Column(name = "email")
     private String email;

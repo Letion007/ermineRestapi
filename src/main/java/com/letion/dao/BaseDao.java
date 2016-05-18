@@ -14,4 +14,6 @@ public interface BaseDao<T> {
     T update(T item);
 
     boolean delete(T item);
+
+//    T findByToken(String item);
 }
