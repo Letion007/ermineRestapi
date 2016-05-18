@@ -39,6 +39,7 @@ public class MainController {
 	public
 	@ResponseBody
 	Map  getUser(@ModelAttribute("login") LoginPassDTO logpas){
+		System.out.println("login - " + logpas);
 		System.out.println("login - " + logpas.getLogin());
 		System.out.println("pass - " + logpas.getPassword());
 		Map <String, Object> result = new HashMap();
